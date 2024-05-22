@@ -63,3 +63,34 @@ function getHumanChoice() {
         }
     }
 }
+
+function playRound() {
+    let humanScore = 0;
+    let computerScore = 0;
+    let humanChoice; 
+    let computerChoice;
+
+
+    while (humanScore < 5 && computerScore < 5) {
+        humanChoice = getHumanChoice();
+        computerChoice = getComputerChoice();
+
+        if (humanChoice === computerChoice) {
+            alert(`It's a Tie! Try Again.\nYou: ${humanScore}\nComputer: ${computerScore}`);
+        } else if ((humanChoice === 'Rock' && computerChoice === 'Scissors') ||
+                   (humanChoice === 'Paper' && computerChoice === 'Rock') ||
+                   (humanChoice === 'Scissors' && computerChoice === 'Paper')) {
+            humanScore++;
+            alert(`You Win! ${humanChoice} beats ${computerChoice}.  \nYou: ${humanScore}\nComputer: ${computerScore}`);
+        } else {
+            computerScore++;
+            alert(`You Lose! ${computerChoice} beats ${humanChoice}.  \nYou: ${humanScore}\nComputer: ${computerScore}`);
+        }
+    }
+
+    if (humanScore === 5) {
+        alert(`You Won the Game! \nYou: ${humanScore}\nComputer: ${computerScore}` );
+    } else {
+        alert(`You Lost the Game! \nYou: ${humanScore}\nComputer: ${computerScore}`);
+    }
+}
