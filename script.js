@@ -11,3 +11,16 @@
     End If
 End Function
 */
+
+function getComputerChoice() {
+    let randomNumberGenerator = Math.floor(Math.random() * 100);
+    let rNG = randomNumberGenerator % 3;
+
+    if (rNG === 0) {
+        return "Rock";
+    } else if (rNG === 1) {
+        return "Paper";
+    } else {
+        return "Scissors";
+    }
+}
