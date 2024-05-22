@@ -24,3 +24,25 @@ function getComputerChoice() {
         return "Scissors";
     }
 }
+
+/*
+Init playerOption
+Function getHumanChoice
+    Display "Welcome to RPS: Enter Rock, Paper, or Scissors"
+    Obtain playerOption
+    
+    Repeat
+    Convert playerOption to lowercase
+        If playerOption equals "rock" then
+            Return "Rock"
+        Else if playerOption equals "paper" then
+            Return "Paper"
+        Else if playerOption equals "scissors" then
+            Return "Scissors"
+        Else
+            Display "Try Again Enter: Rock, Paper, or Scissors"
+            Obtain playerOption
+        End If
+    Until player enters valid input    
+End Function
+*/
