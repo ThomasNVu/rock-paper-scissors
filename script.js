@@ -1,3 +1,4 @@
+alert("Welcome to RPS")
 /*Function getComputerChoice
     Set randomNumberGenerator to Math.floor(Math.random() * 100)
     Set rng to randomNumberGenerator mod 3
