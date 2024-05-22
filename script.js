@@ -46,3 +46,20 @@ Function getHumanChoice
     Until player enters valid input    
 End Function
 */
+
+function getHumanChoice() {
+    let playerOption;
+    while (true) {
+        playerOption = prompt('Enter: Rock, Paper, or Scissors');
+        console.log(playerOption);
+        if (playerOption.toLowerCase() === "rock") {
+            return "Rock";
+        } else if (playerOption.toLowerCase() === "paper") {
+            return "Paper";
+        } else if (playerOption.toLowerCase() === "scissors") {
+            return "Scissors";
+        } else {
+            alert("Try Again Enter: Rock, Paper, or Scissors");
+        }
+    }
+}
