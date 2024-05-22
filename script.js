@@ -94,3 +94,5 @@ function playRound() {
         alert(`You Lost the Game! \nYou: ${humanScore}\nComputer: ${computerScore}`);
     }
 }
+
+playRound();
